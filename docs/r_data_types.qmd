@@ -115,4 +115,3 @@ class(df_1$species)
 ```{r}
 max(df_1$count)
 ```
-
