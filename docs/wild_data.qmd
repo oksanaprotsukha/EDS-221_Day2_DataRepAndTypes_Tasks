@@ -118,7 +118,7 @@ Export your graph as cutthroat_size.png to the figs folder
 mc_trout_scatter_plot <- ggplot(data = mc_trout, aes(x = weight, y = length1, color = reach))+
   geom_point()+
   labs(title = "trout length x weight", x = "weight", y = "length")+
-  facet_wrap(reach)+
+  facet_wrap(~reach)+
   theme_minimal()
  
 ggsave(filename = here("figs","cutthroat_size.jpg"), plot = mc_trout_scatter_plot)
